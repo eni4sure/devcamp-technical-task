@@ -5,27 +5,31 @@
         // Logic statement to check if the integer is a prime
 
         // Check if the integer is less than 1, which is not meant to be gotten as the constraint is postive integers
-        if ($positive_integer[$i] < 1) {
-            // Return false
+        // Check if the positive integer is 1 as it is not a prime number  
+        if ($positive_integer < 1 || $positive_integer == 1) {
+            // Return false, because 0 or any negative is not a prime number 
             return false;
         }
-        
-        // Using is_int PHP function to check if after the dividing the value by 2 is a whole number 
-        if (is_int($positive_integers[$i] / 2)) {
 
-            // It is a whole number, add it to the even sum variable
-            $even_sum = $even_sum + $positive_integers[$i];
-        } else {
-
-            // It is an odd number, add it to the odd sum variable
-            $odd_sum = $odd_sum + $positive_integers[$i];
+        // For loop to check through all the numbers that can be divided by the integer
+        // Loop starts from 2 since, prime numbers are numbers that only 1 and itself can divide
+        for ($i=2; $i < $positive_integer; $i++) {
+            // Using is_int PHP function to check if after the dividing the value by 2 is a whole number 
+            // Also checking for the last iteration if the positive integer we are checking for is not the iterator
+            if (is_int($positive_integer / $i) && $positive_integer != $i) {
+                // Return false
+                return false;
+            }
         }
-
-        // After the loop is complete, Return the array.
-        return [$even_sum, $odd_sum];
+        
+        // After the loop is complete, Return false because the number is not a prime number.
+        return true;
     }
 
     // For testing
-    $test_positive_integers = [1,2,3,4,5,6,7,8,9];
-    print_r (calculate_odd_and_even_sum($test_positive_integers) );
+    $test_positive_integer = 9; // false
+    $test_positive_integer = 91; // false
+    $test_positive_integer = 2; // true
+    $test_positive_integer = 97; // true
+    echo check_if_prime_number($test_positive_integer);
 ?>
