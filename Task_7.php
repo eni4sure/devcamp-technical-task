@@ -27,6 +27,6 @@
     }
 
     // For testing
-    $test_positive_integers = [9, 2, 5, 4, 12, 7, 8, 11, 9, 3, 7, 4, 12, 5, 4, 10, 9, 6, 9, 4];
+    $test_positive_integers = [1,2,3,4,5,6,7,8,9];
     echo calculate_standard_deviation($test_positive_integers);
 ?>
