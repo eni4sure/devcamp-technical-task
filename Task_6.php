@@ -41,6 +41,6 @@
 
     // For testing
     $test_values = [1, 2, 3, 4, 5, 6];
-    $test_sum_value = 73;
+    $test_sum_value = 9;
     print_r( three_sums_checker($test_values, $test_sum_value) );
 ?>
