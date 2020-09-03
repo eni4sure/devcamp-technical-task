@@ -24,10 +24,10 @@
 
     }
 
-    // For testing
+    // For testing, Uncomment the lines below
     // $test_password = 'password'; // very weak - 0
     // $test_password = '123456789'; // weak - 1
     // $test_password = 'password12'; // strong - 2
-    $test_password = 'password#12'; // very strong - 3
-    echo check_password_strength($test_password);
+    // $test_password = 'password#12'; // very strong - 3
+    // echo check_password_strength($test_password);
 ?>

@@ -30,7 +30,7 @@
         return array_key_first($new_array);
     }
 
-    // For testing
-    $test_string = 'afhuusuuuuutgrggtgsegegesfxsffyyyyimr443o0sggg'; // g
-    echo get_most_occuring_character($test_string);
+    // For testing, Uncomment the lines below
+    // $test_string = 'afhuusuuuuutgrggtgsegegesfxsffyyyyimr443o0sggg'; // g
+    // echo get_most_occuring_character($test_string);
 ?>

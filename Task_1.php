@@ -34,7 +34,7 @@
         return [$even_sum, $odd_sum];
     }
 
-    // For testing
-    $test_positive_integers = [1,2,3,4,5,6,7,8,9];
-    print_r (calculate_odd_and_even_sum($test_positive_integers) );
+    // For testing, Uncomment the lines below
+    // $test_positive_integers = [1,2,3,4,5,6,7,8,9]; // [20, 25]
+    // print_r (calculate_odd_and_even_sum($test_positive_integers) );
 ?>

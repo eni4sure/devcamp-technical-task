@@ -26,10 +26,10 @@
         return true;
     }
 
-    // For testing
-    $test_positive_integer = 9; // false
-    $test_positive_integer = 91; // false
-    $test_positive_integer = 2; // true
-    $test_positive_integer = 97; // true
-    echo check_if_prime_number($test_positive_integer);
+    // For testing, Uncomment the lines below
+    // $test_positive_integer = 9; // false
+    // $test_positive_integer = 91; // false
+    // $test_positive_integer = 2; // true
+    // $test_positive_integer = 97; // true
+    // echo check_if_prime_number($test_positive_integer);
 ?>

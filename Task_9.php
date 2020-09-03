@@ -26,9 +26,9 @@
         return 'Yes';
     }
 
-    // For testing
-    $test_string = 'Mr John Smith'; // No
+    // For testing, Uncomment the lines below
+    // $test_string = 'Mr John Smith'; // No
     // $test_string = 'ABA'; // Yes
     // $test_string = ' madam '; // Yes
-    echo check_if_palindrome($test_string);
+    // echo check_if_palindrome($test_string);
 ?>

@@ -39,8 +39,8 @@
         return -1;
     }
 
-    // For testing
-    $test_values = [1, 2, 3, 4, 5, 6];
-    $test_sum_value = 9;
-    print_r( three_sums_checker($test_values, $test_sum_value) );
+    // For testing, Uncomment the lines below
+    // $test_values = [1, 2, 3, 4, 5, 6];
+    // $test_sum_value = 9;
+    // print_r( three_sums_checker($test_values, $test_sum_value) ); // [1,2,6]
 ?>

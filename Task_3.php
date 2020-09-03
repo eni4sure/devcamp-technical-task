@@ -38,7 +38,7 @@
         return $prime_numbers;
     }
 
-    // For testing
-    $test_positive_integers = [1,2,3,4,5,6,7,8,9];
-    print_r( prime_numbers($test_positive_integers) );
+    // For testing, Uncomment the lines below
+    // $test_positive_integers = [1,2,3,4,5,6,7,8,9]; // [2,3,5,7]
+    // print_r( prime_numbers($test_positive_integers) );
 ?>

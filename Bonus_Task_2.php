@@ -29,7 +29,7 @@
         return $new_string;
     }
 
-    // For testing
-    $test_string = 'hello world'; // jemmo xosmf
-    echo replace_consonant($test_string);
+    // For testing, Uncomment the lines below
+    // $test_string = 'hello world'; // jemmo xosmf
+    // echo replace_consonant($test_string);
 ?>
