@@ -11,13 +11,13 @@
         // For loop to check through all the values in the array
         for ($i=0; $i < count($positive_integers); $i++) {
             // Logic statement to check if number is odd or even
-            
+
             // Check if the integer is less than 1, which is not meant to be gotten as the constraint is postive integers
-            if ($positive_integers[$i] < 1) {
+            if ($positive_integers[$i] < 1 && is_int($positive_integers[$i])) {
                 // Start over this iteration and skip this loop.
                 continue;
             }
-           
+
             // Using is_int PHP function to check if after the dividing the value by 2 is a whole number 
             if (is_int($positive_integers[$i] / 2)) {
 

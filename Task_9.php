@@ -26,7 +26,7 @@
         return 'Yes';
     }
 
-    // For testing, Uncomment the lines below
+    // For testing, Uncomment the lines below.
     // $test_string = 'Mr John Smith'; // No
     // $test_string = 'ABA'; // Yes
     // $test_string = ' madam '; // Yes

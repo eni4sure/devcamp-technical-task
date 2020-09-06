@@ -2,7 +2,7 @@
 
     // Using the check_if_prime number function from my solution in Task_2.php
     function check_if_prime_number($positive_integer) {
-        if ($positive_integer < 1 || $positive_integer == 1) return false;
+        if ($positive_integer < 1 || !is_int($positive_integer) || $positive_integer == 1) return false;
         for ($i=2; $i < $positive_integer; $i++) {
             if (is_int($positive_integer / $i) && $positive_integer != $i) return false;
         }
@@ -18,7 +18,7 @@
         // For loop to check through all the values in the array
         for ($i=0; $i < count($positive_integers); $i++) {
             // Logic statement to check if number is odd or even
-            
+
             // Check if the integer is less than 1, which is not meant to be gotten as the constraint is postive integers
             if ($positive_integers[$i] < 1) {
                 // Start over this iteration and skip this loop.
@@ -31,7 +31,6 @@
                 // True; Save the integer into the prime_numbers array.
                 $prime_numbers[] = $positive_integers[$i];
             }
-
         }
 
         // After the loop is complete, Return the array.

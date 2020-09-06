@@ -20,7 +20,7 @@
         return (object)['count' => count($threes_found), 'numbers' => $threes_found];
     }
 
-    // For testing, Uncomment the lines below
+    // For testing, Uncomment the lines below.
     // $test_integer = 35; // {count:9, numbers:[3,13,23,30,31,32,33,34,35]}
     // print_r( check_for_three($test_integer) );
 ?>

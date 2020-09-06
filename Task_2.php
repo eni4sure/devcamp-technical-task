@@ -6,7 +6,7 @@
 
         // Check if the integer is less than 1, which is not meant to be gotten as the constraint is postive integers
         // Check if the positive integer is 1 as it is not a prime number  
-        if ($positive_integer < 1 || $positive_integer == 1) {
+        if ($positive_integer < 1 || !is_int($positive_integer) || $positive_integer == 1) {
             // Return false, because 0 or any negative is not a prime number 
             return false;
         }
@@ -16,12 +16,12 @@
         for ($i=2; $i < $positive_integer; $i++) {
             // Using is_int PHP function to check if after the dividing the value by 2 is a whole number 
             // Also checking for the last iteration if the positive integer we are checking for is not the iterator
-            if (is_int($positive_integer / $i) && $positive_integer != $i) {
+            if (is_int($positive_integer / $i)) {
                 // Return false
                 return false;
             }
         }
-        
+
         // After the loop is complete, Return false because the number is not a prime number.
         return true;
     }

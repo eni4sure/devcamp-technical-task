@@ -26,7 +26,7 @@
         return $standard_deviation; 
     }
 
-    // For testing, Uncomment the lines below
+    // For testing, Uncomment the lines below.
     // $test_positive_integers = [1,2,3,4,5,6,7,8,9]; // 2.5819888974716
     // echo calculate_standard_deviation($test_positive_integers);
 ?>

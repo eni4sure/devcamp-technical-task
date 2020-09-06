@@ -9,7 +9,7 @@
         for ($i=0; $i < $values_count ; $i++) {
             // Save the first addition value
             $value_1 = $values[$i];
-            
+
             // For loop to check through all the values for the second addition value
             for ($i2=0; $i2 < $values_count ; $i2++) { 
                 // Check if this second index is not the first addition value index
@@ -17,7 +17,7 @@
                     // Save the second addition value
                     $value_2 = $values[$i2];
                 }
-                
+
                 // For loop to check through all the values for the third addition value
                 for ($i3=0; $i3 < $values_count; $i3++) { 
                     // Check if this third index is not the first addition value index and not the second addition value

@@ -8,20 +8,19 @@
         switch ($password) {
             // Preg Match check if password contains any letter from (A-Z) capital letters and (a-z) small letters 
             case !preg_match('/[^A-Za-z]/', $password): return 0; break;
-            
+
             // Preg Match check if password contains any number 0-9 
             case !preg_match('/[^0-9]/', $password): return 1; break;
-            
+
             // Preg Match check if password contains letter from (A-Z) capital letters and (a-z) small letters and any number 0-9 
             case !preg_match('/[^A-Za-z0-9]/', $password): return 2; break;
-            
+
             // Preg Match check if password contains letter from (A-Z) capital letters and (a-z) small letters and any number 0-9 and any special characeter @,#,$,^
             case !preg_match('/[^A-Za-z0-9\W]/', $password) : return 3; break;
-            
+
             // Default return nothing
             default: return; break;
         }
-
     }
 
     // For testing, Uncomment the lines below

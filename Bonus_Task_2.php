@@ -13,12 +13,18 @@
         // For loop to go through the whole splitted string array
         for ($i=0; $i < count($split_string); $i++) { 
             // Check if the string is in the consonant array
-            if ( in_array($split_string[$i], $consonants) ) {
+            if ( in_array($split_string[$i], $consonants) && $split_string[$i] != 'z' ) {
                 // Get the key of the consonant in the consonants array
                 $consonant_key = array_search ($split_string[$i], $consonants);
 
                 // Set/Replace the string with the next consonant key value
                 $split_string[$i] = $consonants[$consonant_key + 1];
+            }
+            
+            // If the string is z
+            if ( $split_string[$i] == 'z' ) {
+                // set the character all over to 'b' 
+                $split_string[$i] = 'b';
             }
         }
 

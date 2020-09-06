@@ -11,7 +11,7 @@
         return $new_string;
     }
 
-    // For testing, Uncomment the lines below
+    // For testing, Uncomment the lines below.
     // $test_string = 'st ri ng'; // st%20ri%20ng
     // $test_string = ' Mr John Smith '; // %20Mr%20John%20Smith%20
     // echo replace_spaces($test_string);
